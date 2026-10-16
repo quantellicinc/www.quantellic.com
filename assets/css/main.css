@@ -2560,6 +2560,14 @@ section,
 /*--------------------------------------------------------------
 # Contact Section
 --------------------------------------------------------------*/
+.contact.section {
+  padding-top: 30px;
+}
+
+.contact .section-title {
+  padding-bottom: 30px;
+}
+
 .contact .contact-info-box {
   background-color: var(--surface-color);
   border-radius: 10px;
