@@ -1023,6 +1023,48 @@ section,
   padding-bottom: 60px;
 }
 
+.about .about-content .activity-item {
+  display: flex;
+  gap: 18px;
+  align-items: flex-start;
+  padding: 18px 0;
+  border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+}
+
+.about .about-content .activity-item:last-child {
+  border-bottom: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+}
+
+.about .about-content .activity-item .code {
+  flex: 0 0 auto;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #5BA69A;
+  border: 1px solid color-mix(in srgb, #5BA69A, transparent 50%);
+  border-radius: 6px;
+  padding: 4px 8px;
+  margin-top: 2px;
+}
+
+.about .about-content .activity-item h4 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.about .about-content .activity-item h4 small {
+  font-size: 0.85rem;
+  font-weight: 400;
+  color: color-mix(in srgb, var(--default-color), transparent 35%);
+}
+
+.about .about-content .activity-item p {
+  font-size: 0.95rem;
+  margin: 0;
+  color: color-mix(in srgb, var(--default-color), transparent 25%);
+}
+
 .about .about-image {
   border-radius: 8px;
   overflow: hidden;
