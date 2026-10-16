@@ -27,6 +27,7 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
+  <link href="assets/css/theme-light.css" rel="stylesheet">
 
   <!-- =======================================================
   * Template Name: Strategy
@@ -43,16 +44,18 @@
     <div class="header-container container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
 
       <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.webp" alt=""> -->
-        <h1 class="sitename">Quantellic Inc.</h1>
+        <img src="assets/img/logo.png" alt="Quantellic Inc.">
+        <h1 class="sitename visually-hidden">Quantellic Inc.</h1>
       </a>
 
       <nav id="navmenu" class="navmenu">
         <ul>
           <li><a href="#hero" class="active">Home</a></li>
           <!-- <li><a href="#about">About</a></li> -->
-          <li><a href="#services">Exempt Purposes</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">What We Do</a></li>
+          <li><a href="#people">People</a></li>
+          <li><a href="#governance">Governance</a></li>
           <!-- <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
               <li><a href="#">Dropdown 1</a></li>
@@ -70,13 +73,12 @@
               <li><a href="#">Dropdown 4</a></li>
             </ul>
           </li> -->
-           <li><a href="pdf/Quantellic_LCA_Notices_ETA9035E_Combined.pdf">LCA Notice</a></li>
-          <li><a href="#contact">Contact</a></li>
+                     <li><a href="#contact">Contact</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
 
-      <a class="btn-getstarted" href="#about">About Quantellic Inc.</a>
+      <a class="btn-getstarted" href="#contact">Partner with us</a>
 
     </div>
   </header>
@@ -89,22 +91,29 @@
         <div class="row">
           <div class="col-lg-7 content-col" data-aos="fade-up">
             <div class="content">
+              <div class="eyebrow">Quantellic Inc. &middot; 501(c)(3) nonprofit</div>
+
               <div class="main-heading">
-                <h1>Quantellic Inc.</h1>
+                <h1>Advancing scientific research <em>in the public interest.</em></h1>
               </div>
 
               <div class="divider"></div>
 
               <div class="description">
-                <p>Quantellic Inc. is a charitable nonprofit corporation organized under the laws of the State of Delaware. It is recognized by the U.S. Internal Revenue Service as a 509(a)(2) publicly supported 501(c)(3) tax-exempt organization dedicated to advancing scientific research, education, and related charitable purposes in the public interest.</p>
+                <p>An independent nonprofit supporting scientific research, education, and charitable programs that make knowledge more open and more useful.</p>
               </div>
 
               <div class="cta-button">
-                <a href="#services" class="btn">
-                  <span>EXPLORE SERVICES</span>
+                <a href="#contact" class="btn">
+                  <span>Partner with us</span>
                   <i class="bi bi-arrow-right"></i>
                 </a>
+                <a href="#services" class="btn btn-outline">
+                  <span>What we do</span>
+                </a>
               </div>
+
+              <p class="legal-note">Quantellic Inc. is a charitable nonprofit corporation organized under the laws of the State of Delaware. It is recognized by the U.S. Internal Revenue Service as a 509(a)(2) publicly supported 501(c)(3) tax-exempt organization dedicated to advancing scientific research, education, and related charitable purposes in the public interest.</p>
             </div>
           </div>
 
@@ -125,7 +134,7 @@
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>About</h2>
-        <div><span>Learn More</span> <span class="description-title">About Us</span></div>
+        <div><span class="description-title">Who we are</span></div>
       </div><!-- End Section Title -->
 
       <div class="container">
@@ -177,7 +186,7 @@
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Services</h2>
+        <h2>What we do</h2>
         <div><span></span> <span class="description-title">Exempt Purposes</span></div>
       </div><!-- End Section Title -->
 
@@ -968,13 +977,70 @@
       </div> -->
     </section><!-- /Faq Section -->
 
+    <!-- People Section -->
+    <section id="people" class="people section">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>People</h2>
+        <div><span class="description-title">Leadership &amp; Board</span></div>
+      </div>
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="person-card">
+              <div class="avatar"><i class="bi bi-person"></i></div>
+              <h4>Jiachen Lu</h4>
+              <div class="role">Chief Executive Officer</div>
+              <p>M.A. Applied Economics, Johns Hopkins University. Prior experience at KPMG and EY.</p>
+              <span class="placeholder-tag">Photo &amp; bio to confirm</span>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="person-card">
+              <div class="avatar"><i class="bi bi-person"></i></div>
+              <h4>Board Member</h4>
+              <div class="role">Director</div>
+              <p>Two lines of background: education, current role, relevant expertise.</p>
+              <span class="placeholder-tag">Placeholder</span>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="person-card">
+              <div class="avatar"><i class="bi bi-person"></i></div>
+              <h4>Board Member</h4>
+              <div class="role">Director</div>
+              <p>Two lines of background: education, current role, relevant expertise.</p>
+              <span class="placeholder-tag">Placeholder</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- /People Section -->
+
+    <!-- Governance Section -->
+    <section id="governance" class="governance section">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Governance</h2>
+        <div><span class="description-title">Disclosures &amp; documents</span></div>
+      </div>
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <p class="gov-intro">Quantellic Inc. publishes its governing and compliance documents here. Additional filings are added as they become available.</p>
+        <div class="gov-list">
+          <div class="gov-row"><span class="label">Legal status</span><span class="value">Delaware charitable nonstock corporation; IRS-recognized 509(a)(2) publicly supported 501(c)(3)</span></div>
+          <div class="gov-row"><span class="label">EIN</span><span class="value">XX-XXXXXXX <span class="placeholder-tag">to fill</span></span></div>
+          <div class="gov-row"><span class="label">IRS determination letter</span><span class="value">Recognition of tax-exempt status</span><a class="doc" href="#">PDF <i class="bi bi-box-arrow-up-right"></i></a></div>
+          <div class="gov-row"><span class="label">Form 990</span><span class="value">Annual information return <span class="placeholder-tag">when available</span></span></div>
+          <div class="gov-row"><span class="label">LCA Notice</span><span class="value">Labor Condition Application public notice (ETA-9035E)</span><a class="doc" href="pdf/Quantellic_LCA_Notices_ETA9035E_Combined.pdf">PDF <i class="bi bi-box-arrow-up-right"></i></a></div>
+        </div>
+      </div>
+    </section><!-- /Governance Section -->
+
     <!-- Contact Section -->
     <section id="contact" class="contact section">
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Contact</h2>
-        <div><span>Let's</span> <span class="description-title">Connect</span></div>
+        <div><span class="description-title">Let's connect</span></div>
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -1098,15 +1164,13 @@
       <div class="row gy-4">
         <div class="col-lg-5 col-md-12 footer-about">
           <a href="index.html" class="logo d-flex align-items-center">
-            <span class="sitename">Quantellic Inc.</span>
+            <img src="assets/img/logo.png" alt="Quantellic Inc.">
           </a>
           <p>We envision a future where breakthrough discoveries and open dissemination of research empower individuals, educators, and institutions worldwide to solve complex challenges, foster innovation, and promote equitable access to scientific understanding for the public good.</p>
         <div class="social-links d-flex mt-4">
-            <a href=""><i class="bi bi-twitter-x"></i></a>
-            <a href=""><i class="bi bi-facebook"></i></a>
-            <a href=""><i class="bi bi-instagram"></i></a>
-            <a href=""><i class="bi bi-linkedin"></i></a>
+            <a href="#"><i class="bi bi-linkedin"></i></a>
           </div>
+          <p class="legal-line"><strong>Quantellic Inc.</strong> is a 501(c)(3) tax-exempt organization. EIN XX-XXXXXXX. Contributions are tax-deductible to the extent permitted by law.</p>
         </div>
 
       

@@ -1,0 +1,198 @@
+/* Quantellic light theme — overrides on top of main.css */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@400;500;600&display=swap');
+
+:root {
+  --default-font: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  --heading-font: "Playfair Display", Georgia, "Times New Roman", serif;
+  --nav-font: "Inter", system-ui, sans-serif;
+
+  --background-color: #F7F8FA;
+  --default-color: #3A4756;
+  --heading-color: #0E2A47;
+  --accent-color: #5BA69A;
+  --surface-color: #FFFFFF;
+  --contrast-color: #FFFFFF;
+
+  --nav-color: #3A4756;
+  --nav-hover-color: #0E2A47;
+  --nav-mobile-background-color: #FFFFFF;
+  --nav-dropdown-background-color: #FFFFFF;
+  --nav-dropdown-color: #3A4756;
+  --nav-dropdown-hover-color: #5BA69A;
+
+  --navy: #0E2A47;
+  --navy-2: #143B57;
+  --teal: #5BA69A;
+  --teal-light: #9FD4CB;
+}
+
+body { -webkit-font-smoothing: antialiased; }
+
+/* Header */
+.header .header-container {
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(14, 42, 71, 0.08);
+  box-shadow: 0 6px 24px rgba(14, 42, 71, 0.08);
+}
+.header .logo img { max-height: 34px; margin: 0; }
+.header .navmenu a { font-weight: 500; }
+.header .navmenu a.active, .header .navmenu a:hover { color: var(--teal) !important; }
+.header .btn-getstarted {
+  background: var(--navy) !important;
+  color: #fff !important;
+  text-transform: none;
+  letter-spacing: 0;
+  font-weight: 500;
+}
+.header .btn-getstarted:hover { background: var(--teal) !important; }
+
+/* Hero: a navy panel on the light page */
+.hero {
+  --background-color: var(--navy);
+  --default-color: rgba(255, 255, 255, 0.82);
+  --heading-color: #ffffff;
+  min-height: 92vh;
+  background: linear-gradient(135deg, #0B223B 0%, #0E2A47 55%, #143B57 100%);
+}
+.hero::before { opacity: 0.35; }
+.hero .eyebrow {
+  font-size: 13px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--teal-light);
+  font-weight: 600;
+  margin-bottom: 18px;
+}
+.hero .main-heading h1 {
+  font-size: 3.9rem;
+  font-weight: 600;
+  letter-spacing: -0.5px;
+  line-height: 1.12;
+  color: #fff;
+}
+.hero .main-heading h1 em { font-style: italic; color: var(--teal-light); }
+.hero .divider { background: rgba(159, 212, 203, 0.35); }
+.hero .description p { font-size: 1.05rem; color: rgba(255,255,255,0.78); max-width: 560px; }
+.hero .cta-button .btn {
+  border: 1px solid var(--teal);
+  background: var(--teal);
+  color: #fff;
+  text-transform: none;
+  letter-spacing: 0;
+  font-weight: 500;
+  border-radius: 8px;
+}
+.hero .cta-button .btn:hover { background: #fff; color: var(--navy); border-color: #fff; }
+.hero .cta-button .btn-outline {
+  margin-left: 12px;
+  background: transparent;
+  color: #fff;
+  border-color: rgba(255,255,255,0.35);
+}
+.hero .legal-note {
+  margin-top: 28px;
+  font-size: 0.82rem;
+  color: rgba(255,255,255,0.5);
+  max-width: 560px;
+  line-height: 1.6;
+}
+
+/* Section titles */
+.section-title h2 {
+  color: var(--teal);
+  font-family: var(--default-font);
+}
+.section-title h2::after { background: var(--teal); }
+.section-title div {
+  font-family: var(--heading-font);
+  text-transform: none;
+  font-weight: 600;
+  font-size: 2.1rem;
+  letter-spacing: -0.3px;
+}
+
+/* About */
+.about .about-content h2 { font-family: var(--heading-font); font-weight: 600; }
+.about .about-content .activity-item { border-color: rgba(14, 42, 71, 0.1); }
+.about .about-content .activity-item .code { color: var(--teal); border-color: rgba(91, 166, 154, 0.5); }
+.about .about-content .activity-item h4 { color: var(--navy); }
+.about .about-content .activity-item h4 small { color: #7A8794; }
+.about .about-content .activity-item p { color: #4C5A69; }
+.about .about-image img { box-shadow: 0 20px 50px rgba(14, 42, 71, 0.18) !important; }
+
+/* Services cards stay navy — tweak shadows for light bg */
+.services .service-card { box-shadow: 0 16px 40px rgba(14, 42, 71, 0.18); border-color: rgba(91,166,154,0.35); }
+.services .service-card h3 { font-family: var(--heading-font); font-weight: 600; }
+
+/* People */
+.people .person-card {
+  background: #fff;
+  border: 1px solid rgba(14, 42, 71, 0.08);
+  border-radius: 16px;
+  padding: 28px;
+  height: 100%;
+  box-shadow: 0 8px 24px rgba(14, 42, 71, 0.06);
+  transition: transform .3s ease, box-shadow .3s ease;
+}
+.people .person-card:hover { transform: translateY(-4px); box-shadow: 0 16px 36px rgba(14, 42, 71, 0.12); }
+.people .person-card .avatar {
+  width: 88px; height: 88px; border-radius: 50%;
+  background: linear-gradient(135deg, #E6EEF3, #CFE3E0);
+  border: 3px solid #fff;
+  box-shadow: 0 0 0 1px rgba(14,42,71,0.08);
+  display: flex; align-items: center; justify-content: center;
+  color: var(--teal); font-size: 30px;
+  margin-bottom: 18px;
+}
+.people .person-card h4 { font-family: var(--heading-font); font-weight: 600; color: var(--navy); margin-bottom: 4px; font-size: 1.25rem; }
+.people .person-card .role { color: var(--teal); font-size: 0.85rem; font-weight: 600; letter-spacing: 0.5px; text-transform: uppercase; margin-bottom: 12px; }
+.people .person-card p { font-size: 0.93rem; color: #4C5A69; margin: 0; }
+.placeholder-tag {
+  display: inline-block; font-size: 11px; letter-spacing: 1px; text-transform: uppercase;
+  color: #B4541E; background: #FBEEE4; border: 1px dashed #E7B38F; border-radius: 4px; padding: 2px 8px; margin-top: 10px;
+}
+
+/* Governance */
+.governance .gov-list { background: #fff; border: 1px solid rgba(14,42,71,0.08); border-radius: 16px; overflow: hidden; box-shadow: 0 8px 24px rgba(14,42,71,0.06); }
+.governance .gov-row { display: flex; align-items: center; justify-content: space-between; gap: 20px; padding: 20px 28px; border-top: 1px solid rgba(14,42,71,0.08); }
+.governance .gov-row:first-child { border-top: 0; }
+.governance .gov-row .label { font-weight: 600; color: var(--navy); min-width: 220px; }
+.governance .gov-row .value { color: #4C5A69; flex: 1; }
+.governance .gov-row a.doc { color: var(--teal); font-weight: 500; white-space: nowrap; }
+.governance .gov-row a.doc i { margin-left: 6px; }
+.governance .gov-intro { color: #4C5A69; max-width: 640px; margin-bottom: 28px; }
+
+/* Contact */
+.contact.section { padding-top: 30px; }
+.contact .contact-info-box { border: 1px solid rgba(14,42,71,0.08); box-shadow: 0 8px 24px rgba(14,42,71,0.06); border-radius: 16px; }
+.contact .contact-info-box .icon-box { background: #E8F3F1 !important; }
+.contact .contact-info-box .icon-box i { color: var(--teal) !important; }
+.contact .contact-form-wrapper, .contact .php-email-form { background: #fff !important; border: 1px solid rgba(14,42,71,0.08); box-shadow: 0 8px 24px rgba(14,42,71,0.06); }
+.contact .php-email-form .form-control { background: #F7F8FA !important; border-color: rgba(14,42,71,0.12) !important; color: var(--navy) !important; }
+.contact .php-email-form button[type=submit] { background: var(--navy) !important; color: #fff !important; box-shadow: none !important; text-transform: none; letter-spacing: 0; border-radius: 8px; }
+.contact .php-email-form button[type=submit]:hover { background: var(--teal) !important; }
+
+/* Footer */
+.footer { border-top: 1px solid rgba(14,42,71,0.08); background: #fff; }
+.footer .footer-about .logo img { max-height: 32px; }
+.footer .footer-about p { color: #4C5A69; }
+.footer .social-links a { border-color: rgba(14,42,71,0.15) !important; color: var(--navy) !important; }
+.footer .social-links a:hover { background: var(--navy) !important; color: #fff !important; }
+.footer .footer-contact h4 { color: var(--navy); }
+.footer .copyright { background: #F7F8FA !important; border-top: 1px solid rgba(14,42,71,0.06); }
+.footer .legal-line { font-size: 12.5px; color: #7A8794; margin-top: 14px; line-height: 1.7; }
+.footer .legal-line strong { color: var(--navy); font-weight: 600; }
+
+/* scroll-top */
+.scroll-top { background: var(--navy) !important; }
+
+/* fixes */
+.hero .content { padding-top: 90px; }
+.about .about-content .activity-item h4,
+.people .person-card h4 small,
+.governance .gov-row .label { font-family: var(--default-font); }
+.about .about-content .activity-item h4 { font-size: 1.05rem; }
+.footer, .footer p, .footer .footer-about p, .footer .legal-line, .contact .contact-info-box h4 { font-family: var(--default-font); }
+.contact .contact-info-box h4 { font-weight: 600; color: var(--navy); }
+.contact .map-section iframe { border-radius: 16px; filter: saturate(0.6); }
