@@ -3766,3 +3766,31 @@ section,
 .starter-section {
   /* Add your styles here */
 }
+/*--------------------------------------------------------------
+# Header: white bar with wordmark
+--------------------------------------------------------------*/
+.header .header-container {
+  background: #ffffff;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.25);
+  padding: 10px 30px 10px 26px;
+}
+
+.header .logo img {
+  max-height: 40px;
+  margin: 0;
+}
+
+.header .navmenu a,
+.header .navmenu a:focus {
+  color: #0E2A47;
+}
+
+.header .navmenu a:hover,
+.header .navmenu .active,
+.header .navmenu .active:focus {
+  color: #5BA69A;
+}
+
+.header .mobile-nav-toggle {
+  color: #0E2A47;
+}
