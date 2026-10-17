@@ -3794,3 +3794,25 @@ section,
 .header .mobile-nav-toggle {
   color: #0E2A47;
 }
+
+@media (min-width: 1200px) {
+  .header .navmenu a,
+  .header .navmenu a:focus {
+    padding: 18px 22px;
+  }
+}
+
+.header .btn-getstarted,
+.header .btn-getstarted:focus {
+  background: #0E2A47;
+  color: #ffffff;
+  text-transform: none;
+  letter-spacing: 0;
+  font-weight: 500;
+}
+
+.header .btn-getstarted:hover,
+.header .btn-getstarted:focus:hover {
+  background: #5BA69A;
+  color: #ffffff;
+}
