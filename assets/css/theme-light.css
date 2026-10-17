@@ -1,0 +1,98 @@
+/* Quantellic light theme — color overrides on top of main.css */
+:root {
+  --background-color: #F7F8FA;
+  --default-color: #3A4756;
+  --heading-color: #0E2A47;
+  --accent-color: #5BA69A;
+  --surface-color: #FFFFFF;
+  --contrast-color: #FFFFFF;
+
+  --nav-color: #0E2A47;
+  --nav-hover-color: #5BA69A;
+  --nav-mobile-background-color: #FFFFFF;
+  --nav-dropdown-background-color: #FFFFFF;
+  --nav-dropdown-color: #0E2A47;
+  --nav-dropdown-hover-color: #5BA69A;
+
+  --navy: #0E2A47;
+  --teal: #5BA69A;
+  --teal-light: #9FD4CB;
+}
+
+/* Header */
+.header .header-container {
+  border: 1px solid rgba(14, 42, 71, 0.08);
+  box-shadow: 0 6px 24px rgba(14, 42, 71, 0.10);
+}
+
+/* Hero stays a navy panel so the network animation keeps its glow */
+.hero {
+  --background-color: #0E2A47;
+  --default-color: rgba(255, 255, 255, 0.82);
+  --heading-color: #ffffff;
+  background: linear-gradient(135deg, #0B223B 0%, #0E2A47 55%, #143B57 100%);
+}
+.hero .description p { color: rgba(255, 255, 255, 0.78); }
+.hero .divider { background: rgba(159, 212, 203, 0.35); }
+.hero .cta-button .btn {
+  border-color: var(--teal);
+  background: var(--teal);
+  color: #fff;
+}
+.hero .cta-button .btn:hover { background: #fff; color: var(--navy); border-color: #fff; }
+
+/* Section titles */
+.section-title h2 { color: var(--teal); }
+.section-title h2::after { background: var(--teal); }
+
+/* About */
+.about .about-content .activity-item { border-color: rgba(14, 42, 71, 0.10); }
+.about .about-content .activity-item h4 { color: var(--navy); }
+.about .about-content .activity-item h4 small { color: #7A8794; }
+.about .about-content .activity-item p { color: #4C5A69; }
+.about .about-image img { box-shadow: 0 20px 50px rgba(14, 42, 71, 0.18) !important; }
+
+/* Exempt Purposes cards stay navy; soften the shadow for a light page */
+.services .service-card {
+  box-shadow: 0 16px 40px rgba(14, 42, 71, 0.18);
+  border-color: rgba(91, 166, 154, 0.35);
+}
+
+/* Contact */
+.contact .contact-info-box {
+  border: 1px solid rgba(14, 42, 71, 0.08);
+  box-shadow: 0 8px 24px rgba(14, 42, 71, 0.06);
+  border-radius: 16px;
+}
+.contact .contact-info-box .icon-box { background: #E8F3F1 !important; }
+.contact .contact-info-box .icon-box i { color: var(--teal) !important; }
+.contact .contact-info-box h4 { color: var(--navy); }
+.contact .contact-form-wrapper {
+  border: 1px solid rgba(14, 42, 71, 0.08);
+  box-shadow: 0 8px 24px rgba(14, 42, 71, 0.06);
+}
+.contact .php-email-form .form-control {
+  background: #F7F8FA !important;
+  border-color: rgba(14, 42, 71, 0.12) !important;
+  color: var(--navy) !important;
+}
+.contact .php-email-form .form-control::placeholder { color: #8A96A3; }
+.contact .php-email-form button[type=submit] {
+  background: var(--navy) !important;
+  color: #fff !important;
+  box-shadow: none !important;
+}
+.contact .php-email-form button[type=submit]:hover { background: var(--teal) !important; }
+.contact .map-section iframe { border-radius: 16px; }
+
+/* Footer */
+.footer { background: #fff; border-top: 1px solid rgba(14, 42, 71, 0.08); }
+.footer .footer-about p, .footer p { color: #4C5A69; }
+.footer .social-links a { border-color: rgba(14, 42, 71, 0.15) !important; color: var(--navy) !important; }
+.footer .social-links a:hover { background: var(--navy) !important; color: #fff !important; border-color: var(--navy) !important; }
+.footer .footer-contact h4, .footer .sitename { color: var(--navy); }
+.footer .copyright { background: #F7F8FA !important; border-top: 1px solid rgba(14, 42, 71, 0.06); }
+
+/* Misc */
+.scroll-top { background: var(--navy) !important; }
+.scroll-top:hover { background: var(--teal) !important; }
