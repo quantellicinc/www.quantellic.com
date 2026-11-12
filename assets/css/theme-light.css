@@ -96,3 +96,17 @@
 /* Misc */
 .scroll-top { background: var(--navy) !important; }
 .scroll-top:hover { background: var(--teal) !important; }
+
+/* Tax-exempt status block (About) */
+.about .about-content .activity-item.exempt-status .code { color: var(--navy); border-color: rgba(14, 42, 71, 0.30); }
+.about .about-content .exempt-facts { list-style: none; padding: 0; margin: 12px 0 0; border-top: 1px dashed rgba(14, 42, 71, 0.15); }
+.about .about-content .exempt-facts li { display: flex; justify-content: space-between; gap: 16px; padding: 8px 0; border-bottom: 1px dashed rgba(14, 42, 71, 0.15); font-size: 0.95rem; }
+.about .about-content .exempt-facts .label { color: #7A8794; }
+.about .about-content .exempt-facts .value { color: var(--navy); font-weight: 600; }
+.about .about-content .exempt-facts a.doc { color: var(--teal); text-decoration: none; }
+.about .about-content .exempt-facts a.doc:hover { text-decoration: underline; }
+
+/* Footer legal line */
+.footer .legal-line { font-size: 0.85rem; color: #6B7785; margin-top: 10px; }
+.footer .legal-line a { color: var(--teal); text-decoration: underline; }
+.about .about-content .codes-caption { font-size: 0.8rem; letter-spacing: 1.5px; text-transform: uppercase; color: #7A8794; margin: -6px 0 10px; }
